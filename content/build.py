@@ -1,52 +1,4 @@
-def main():
-top = open(’templates/top.html’).read()
-   # Concerts  Attended Page
-    conc_att = [
-     {
-        ’filename’: ’content/about.html’,
-        ’title’ : ’About Me’,
-    },
-    {
-        ’filename’: ’content/projects.html’,
-        ’title’ : ’My Projects’,
-    },
-    {
-        ’filename’: ’content/blog.html’,
-        ’title’ : ’My programming blog’,
-    },
-]
-    # Concert Photos Page
-    conc_photos = [
-     {
-        ’filename’: ’content/about.html’,
-        ’title’ : ’About Me’,
-    },
-    {
-        ’filename’: ’content/projects.html’,
-        ’title’ : ’My Projects’,
-    },
-    {
-        ’filename’: ’content/blog.html’,
-        ’title’ : ’My programming blog’,
-    },
-]
-    # Concert Videos Page
-        conc_vids = [
-     {
-        ’filename’: ’content/about.html’,
-        ’title’ : ’About Me’,
-    },
-    {
-        ’filename’: ’content/projects.html’,
-        ’title’ : ’My Projects’,
-    },
-    {
-        ’filename’: ’content/blog.html’,
-        ’title’ : ’My programming blog’,
-    },
-]
-
-Attended
+# Concerts Attended
 top_template = open('/home/aturman/Desktop/ALT_HW_2/templates/conc_att_top.html').read()
 bottom_template = open('/home/aturman/Desktop/ALT_HW_2/templates/conc_att_bottom.html').read()
 
@@ -89,5 +41,3 @@ content = open('/home/aturman/Desktop/ALT_HW_2/content/index.html').read()
 # Combine template HTML code with content HTML code
 index_html = top_template + content + bottom_template
 open('/home/aturman/Desktop/ALT_HW_2/docs/index.html', 'w+').write(index_html)
-if __name__ == ’__main__’:
-main()
